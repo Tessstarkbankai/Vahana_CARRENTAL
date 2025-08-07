@@ -1,6 +1,7 @@
 import React from 'react'
 import { assets } from '../assets/assets'
-import { motion } from 'motion/react';
+import { motion, vh } from 'motion/react';
+import vhlogo from '../assets/vh.png'
 
 const Footer = () => {
   return (
@@ -23,7 +24,7 @@ const Footer = () => {
                         whileInView={{ opacity: 1 }}
                         transition={{ duration: 0.5, delay: 0.3 }}
 
-                    src={assets.logo} alt="logo" className='h-8 md:h-9' />
+                    src={vhlogo} alt="logo" className='h-8 md:h-9 w-[160px] object-cover' />
 
                     <motion.p 
                         initial={{ opacity: 0 }}
